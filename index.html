@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>DukayLevente9e</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body {
+            background-color: rgba(210, 160, 255, 0.65);
+        }
+        table {
+            margin-left: 750px;
+            width: 300px;
+            height: 750px;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+        th {
+            width: 60px;
+            text-align: center;
+            padding: 5px;
+            border: 2px solid black;
+        }
+    </style>
+
+<script>
+var i; 
+document.writeln("<table>"); 
+document.writeln("<thead>");
+document.writeln("<tr style='background-color: cadetblue; color: black;'>");
+document.writeln("<th>n!</th>");
+document.writeln("<th>Eredmeny</th>");
+document.writeln("</tr>");
+document.writeln("</thead>"); 
+document.writeln( "<tbody>");
+    for (i = 0 ;i <= 20 ;i++) {
+        if (i % 2 == 0) {
+            document.writeln("<tr style='background-color: lightcyan; color: black;'>");
+        } else {
+            document.writeln("<tr style='background-color: lightcyan; color: black;'>");
+        } 
+document.writeln("<td style='text-align: center; border: 1px solid black;'>" + i + '!' + "</td>"); 
+document.writeln("<td style='text-align: right; border: 1px solid black;'>" + factorial(i) + "</td>"); 
+document.writeln("</tr>");
+}
+document.writeln("</tbody>"); 
+document.writeln("</table>"); 
+
+function factorial(i) {
+var counter;
+var fact = 1; 
+    if (i < 0) {
+        return -1;
+    } else {
+        if (i >= 1) {
+            for (counter = 2; counter <= i;counter++)
+        {
+            fact *= counter;
+        }
+    } 
+    return fact;
+}
+}
+</script>
+</head> 
+<body></body>
+</html>
